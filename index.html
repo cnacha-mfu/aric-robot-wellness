@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="deck-version" content="2026-10-22.1">
+<meta name="deck-version" content="2026-10-22.3">
 <meta name="description" content="ARIC Robot Wellness — สร้างสมองให้หุ่นยนต์เพื่อการรักษาและดูแล: แนวคิดศูนย์ ARIC และโครงการ Embodied Intelligence มหาวิทยาลัยแม่ฟ้าหลวง">
 <link rel="icon" type="image/svg+xml" href="aric_logo_mark.svg">
 <title>ARIC Robot Wellness — สมองหุ่นยนต์เพื่อการรักษาและดูแล</title>
@@ -415,6 +415,21 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 .road .ln.care b{color:var(--red)} .road .ln.care span{color:var(--mute)}
 
 /* ---------- ask ---------- */
+/* ---------- slide 8 v2: photo cards + why AgiBot ---------- */
+.pcard{flex:1;min-width:0;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:12px 16px 14px;display:flex;flex-direction:column}
+.pcard .ph{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pcard .ph img{max-height:100%;max-width:100%;object-fit:contain;display:block}
+.pcard h3{margin:6px 0 0;font-size:20px;font-weight:600}
+.pcard .kind{font-size:13.5px;font-weight:500}
+.pcard .txt{font-size:14px;margin-top:2px}
+.pcard .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.pcard .tags span{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--cream2);color:var(--ink2)}
+.pcard .tags span.k{background:var(--red);color:var(--hi)}
+.why2{display:flex;gap:14px;padding:11px 0;border-top:1px solid var(--rule2)}
+.why2:first-of-type{border-top:0}
+.why2 .n{font:600 20px var(--mono);color:var(--red);width:20px;flex:none;line-height:1.3}
+.why2 b{font-size:16.5px;font-weight:600;display:block}
+.why2 span{display:block;font-size:14px;font-weight:300;color:var(--ink2);line-height:1.5;margin-top:2px}
 .ask{display:flex;gap:16px;align-items:flex-start;padding:13px 0;border-bottom:1px solid rgba(255,240,210,.18)}
 .ask:last-child{border-bottom:0}
 .ask .n{font:600 26px var(--mono);color:#E4B04A;width:30px;flex:none;line-height:1.1}
@@ -484,7 +499,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 2 · WHY ═══════════ -->
 <section class="s why" data-cap="ทำไม · Why">
-  <div class="thread" aria-hidden="true"><span class="on">ทำไม</span><i></i><span class="">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="on">ทำไม</span><i></i><span class="">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="body" style="gap:50px;align-items:center">
     <div style="flex:1;min-width:0;display:flex;flex-direction:column">
       <div class="lead a-fade" style="--d:200ms">เราเชื่อว่า</div>
@@ -521,7 +536,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 3 · BRAIN, NOT HANDS ═══════════ -->
 <section class="s" data-cap="สร้างสมอง ไม่สร้างมือกล">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">ไม่สร้างมือกล — <span class="red">เราสร้างสมองให้หุ่นยนต์</span></h1>
     <div class="sub">ตัวหุ่นยนต์ถูกห่วงโซ่อุปทานจีนครองแล้ว แต่ชั้นที่ต้องเข้าใจ<b>ภาษา ข้อมูล และหน้างานของไทย</b>ยังว่าง</div>
@@ -593,7 +608,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 4 · THE BRAIN FOR CARE (focal) ═══════════ -->
 <section class="s" data-cap="สมองเพื่อการรักษาและดูแล">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">สมองที่เราจะสร้างก่อน — <span class="red">สมองสำหรับการรักษาและดูแล</span></h1>
     <div class="sub">หุ่นยนต์ที่<b>ช่วยพยาบาลและผู้ดูแล</b>ในโรงพยาบาลและที่บ้าน — ตัวหุ่นซื้อจากผู้ผลิตระดับโลก ส่วนสมอง ARIC สร้าง</div>
@@ -667,7 +682,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 <section class="s carep dark" data-cap="โจทย์จริงอยู่ใน มฟล.">
   <div class="bg" aria-hidden="true"></div>
   <div class="shade" aria-hidden="true"></div>
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="on">สร้างอะไร</span><i></i><span class="">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="body" style="position:relative;flex-direction:column;justify-content:center;max-width:700px">
     <h1 class="a-wipe" style="font-size:46px;font-weight:600;line-height:1.22;margin:0;--d:100ms">โจทย์จริงและคนที่ใช่<br><span style="color:#E4B04A">อยู่ใน มฟล. แล้ว</span></h1>
     <div class="a-fade" style="font-size:17px;font-weight:300;color:rgba(250,246,238,.78);margin:14px 0 18px;line-height:1.5;--d:500ms">มหาวิทยาลัยมีระบบนิเวศด้านสุขภาพครบ ตั้งแต่การรักษา การป้องกันโรค จนถึงการส่งเสริมสุขภาวะ (wellness)</div>
@@ -688,7 +703,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 6 · THE ARIC ENGINE ═══════════ -->
 <section class="s" data-cap="กลไก ARIC · Spark–Forge–Launch">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="on">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="on">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">ARIC เปลี่ยนโจทย์เป็นผลงาน — <span class="red">รอบละ ๔ เดือน ปีละ ๓ รอบ</span></h1>
     <div class="sub">ศูนย์สร้างนวัตกรรม AI และหุ่นยนต์จากโจทย์จริง · วัดผลที่<b>มีคนใช้จริงและมีคนจ่ายเงิน</b> ไม่ใช่จบที่ต้นแบบ</div>
@@ -747,7 +762,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 7 · ORGANISATION (brief) ═══════════ -->
 <section class="s" data-cap="โครงสร้าง · Organisation">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="on">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="on">สร้างอย่างไร</span><i></i><span class="">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">องค์กรเล็กและคล่องตัว — <span class="red">๒ อัตราใหม่</span> แล้วเติบโตผ่านมูลนิธิ</h1>
     <div class="sub">ระยะที่ ๑ อยู่ใต้สำนักวิชา ADT · ระยะที่ ๒ ย้ายไปอยู่ใต้<b>มูลนิธิมหาวิทยาลัยแม่ฟ้าหลวง</b> ซึ่งถือหุ้น 15% ในทุกบริษัทที่เกิดจากศูนย์</div>
@@ -784,40 +799,41 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
   <div class="pg">07</div>
 </section>
 
-<!-- ═══════════ 8 · EMBODIED INTELLIGENCE ═══════════ -->
+<!-- ═══════════ 8 · EMBODIED INTELLIGENCE — platforms + why AgiBot ═══════════ -->
 <section class="s" data-cap="Embodied Intelligence · คน">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="on">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="on">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">Embodied Intelligence — <span class="red">สมองหุ่นยนต์ต้องมีคนสร้าง</span></h1>
     <div class="sub">ยกระดับอาจารย์ ADT บน<b>หุ่นยนต์จริง ๒ แพลตฟอร์ม</b> ก่อนห้องปฏิบัติการชุดใหญ่ของ ARIC มาถึง — ครุภัณฑ์มีค่าเมื่อมีคนพร้อมใช้และสอน</div>
   </div>
-  <div class="body" style="gap:40px">
-    <div style="flex:1.3;display:flex;flex-direction:column;gap:14px;justify-content:center">
-      <div class="plat a-slide" style="--d:200ms"><svg viewBox="0 0 90 120" width="90" height="120" aria-hidden="true">
-  <rect x="30" y="4" width="30" height="32" rx="12" fill="#4A3F33"/><rect x="36" y="9" width="18" height="10" rx="3" fill="#7A1C1C"/><rect x="34" y="22" width="22" height="8" rx="4" fill="#1C1610"/>
-  <path d="M26 42 H64 L60 74 H30 Z" fill="#D8CCB6" stroke="#B9A88E" stroke-width="2"/>
-  <path d="M27 46 L18 70 L20 90 M63 46 L72 70 L70 90 M38 76 L36 114 M52 76 L54 114" stroke="#B9A88E" stroke-width="6" stroke-linecap="round" fill="none"/></svg>
-        <div style="flex:1"><h3>AgiBot X2 Ultra <span class="chip">หุ่นยนต์ฮิวแมนนอยด์</span></h3>
-          <div class="txt">31 องศาอิสระ เดิน หยิบจับ และสื่อสารกับมนุษย์ได้</div>
-          <div class="tags"><span class="k">แพลตฟอร์มทดลองสมองเพื่อการดูแล</span><span>ปฏิสัมพันธ์มนุษย์–หุ่นยนต์</span><span>งานวิจัย VLA</span></div></div></div>
-      <div class="plat a-slide" style="--d:400ms"><svg viewBox="0 0 120 80" width="120" height="80" aria-hidden="true">
-  <rect x="24" y="22" width="66" height="22" rx="9" fill="#D8CCB6" stroke="#B9A88E" stroke-width="2"/><rect x="86" y="14" width="24" height="18" rx="5" fill="#4A3F33"/><rect x="99" y="19" width="8" height="5" rx="2" fill="#E4B04A"/>
-  <path d="M34 44 L28 58 L34 74 M46 44 L52 58 L46 74 M72 44 L66 58 L72 74 M84 44 L90 58 L84 74" stroke="#B9A88E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-        <div style="flex:1"><h3>AgiBot D1 Edu <span class="chip g">หุ่นยนต์สี่ขา</span></h3>
-          <div class="txt">SDK เปิด รองรับการจำลองใน Isaac Sim และ MuJoCo</div>
-          <div class="tags"><span>ชั้นเรียนและปฏิบัติการ</span><span>การเคลื่อนที่ การรับรู้ การนำทาง</span><span>ตรวจสอบและเกษตร</span></div></div></div>
-      <div class="a-rise" style="--d:700ms;display:flex;gap:14px;align-items:stretch;margin-top:8px">
-        <div style="flex:1;padding:12px 16px;background:var(--cream2);border-radius:4px"><div class="lbl">สิ่งที่มี</div><div class="txt"><b>อาจารย์ 40 คน</b> เชี่ยวชาญ AI ซอฟต์แวร์ IoT และการสื่อสาร</div></div>
+  <div class="body" style="gap:36px">
+    <div style="flex:1.3;display:flex;flex-direction:column;gap:12px;min-width:0">
+      <div style="display:flex;gap:14px;flex:1;min-height:0">
+        <div class="pcard a-focus" style="--d:150ms">
+          <div class="ph"><img src="agibot_x2_ultra.jpg" alt="หุ่นยนต์ฮิวแมนนอยด์ AgiBot X2 Ultra"></div>
+          <h3>AgiBot X2 Ultra</h3><div class="kind red">หุ่นยนต์ฮิวแมนนอยด์ · 31 องศาอิสระ</div>
+          <div class="txt">เดิน หยิบจับ และสื่อสารกับมนุษย์ได้</div>
+          <div class="tags"><span class="k">ทดลองสมองเพื่อการดูแล</span><span>ปฏิสัมพันธ์มนุษย์–หุ่นยนต์</span><span>งานวิจัย VLA</span></div>
+        </div>
+        <div class="pcard a-focus" style="--d:350ms">
+          <div class="ph"><img src="agibot_d1_edu.jpg" alt="หุ่นยนต์สี่ขา AgiBot D1 Edu"></div>
+          <h3>AgiBot D1 Edu</h3><div class="kind" style="color:var(--gold2)">หุ่นยนต์สี่ขาเพื่อการศึกษา</div>
+          <div class="txt">SDK เปิด จำลองใน Isaac Sim และ MuJoCo</div>
+          <div class="tags"><span>ชั้นเรียนและปฏิบัติการ</span><span>เคลื่อนที่ รับรู้ นำทาง</span><span>ตรวจสอบและเกษตร</span></div>
+        </div>
+      </div>
+      <div class="a-rise" style="--d:700ms;display:flex;gap:12px;align-items:stretch">
+        <div style="flex:1;padding:10px 14px;background:var(--cream2);border-radius:4px"><div class="lbl">สิ่งที่มี</div><div class="txt"><b>อาจารย์ 40 คน</b> ด้าน AI ซอฟต์แวร์ IoT และการสื่อสาร</div></div>
         <div style="align-self:center;color:var(--tan);font-size:22px">→</div>
-        <div style="flex:1;padding:12px 16px;background:var(--hi);border-radius:4px"><div class="lbl" style="color:var(--gold2)">ช่องว่าง</div><div class="txt">แทบไม่มีประสบการณ์กับ<b>หุ่นยนต์ฮิวแมนนอยด์และสี่ขายุคใหม่</b></div></div>
+        <div style="flex:1;padding:10px 14px;background:var(--hi);border-radius:4px"><div class="lbl" style="color:var(--gold2)">ช่องว่าง</div><div class="txt">แทบไม่มีประสบการณ์กับ<b>หุ่นยนต์ยุคใหม่</b></div></div>
       </div>
     </div>
-    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--rule);padding-left:36px">
-      <div style="font-size:18px;font-weight:600">ทำไมต้องเริ่มตอนนี้</div>
-      <div class="note">เงินระดมทุนของสตาร์ทอัพหุ่นยนต์ทั่วโลก (พันล้านดอลลาร์สหรัฐ)</div>
-      <div class="vbar"><div class="c"><div class="v">13.1</div><div class="b a-growY" style="height:103px;background:#C9A87A;--d:600ms"></div><div class="y">๒๕๖๔</div></div><div class="c"><div class="v">8.2</div><div class="b a-growY" style="height:64px;background:#C9A87A;--d:750ms"></div><div class="y">๒๕๖๗</div></div><div class="c"><div class="v">~14</div><div class="b a-growY" style="height:110px;background:#C9A87A;--d:900ms"></div><div class="y">๒๕๖๘</div></div><div class="c"><div class="v">23+</div><div class="b a-growY" style="height:180px;background:#7A1C1C;--d:1050ms"></div><div class="y">๒๕๖๙*</div></div></div>
-      <div class="note" style="font-size:11.5px;margin-top:4px">Crunchbase News · *ปี ๒๕๖๙ เฉพาะ ม.ค.–ส.ค.</div>
-      <div class="txt a-fade" style="--d:1300ms;margin-top:22px">โมเดลพื้นฐานของหุ่นยนต์ (VLA) เช่น NVIDIA GR00T, Gemini Robotics และ π0 ทำให้หุ่นยนต์ขับเคลื่อนด้วย<b>ข้อมูลและซอฟต์แวร์</b> — ซึ่งเป็นจุดแข็งของสำนักวิชา</div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--rule);padding-left:34px">
+      <div style="font-size:20px;font-weight:600;margin-bottom:4px">ทำไมต้อง <span class="red">AgiBot</span></div>
+      <div class="why2 a-rise" style="--d:500ms"><div class="n">1</div><div><b>ครบสองแพลตฟอร์มจากรายเดียว</b><span>ฮิวแมนนอยด์ + สี่ขา ใช้ชุดเครื่องมือเดียวกัน อบรมครั้งเดียวใช้ได้ทั้งคู่</span></div></div>
+      <div class="why2 a-rise" style="--d:650ms"><div class="n">2</div><div><b>เปิดให้เราสร้างสมองต่อได้</b><span>SDK เปิด · ชุดข้อมูลเปิด AgiBot World กว่า 1 ล้านตัวอย่าง · โมเดลพื้นฐาน GO-1 — ตรงกับบทบาท “สร้างสมอง” ของ ARIC</span></div></div>
+      <div class="why2 a-rise" style="--d:800ms"><div class="n">3</div><div><b>ผลิตจำนวนมาก ราคาจับต้องได้</b><span>ผู้ผลิตหุ่นยนต์ฮิวแมนนอยด์รายใหญ่ของจีน — ทั้งสองตัวรวม ฿3.47 ล้าน</span></div></div>
+      <div class="why2 a-rise" style="--d:950ms"><div class="n">4</div><div><b>ความร่วมมือเริ่มแล้ว</b><span>หารือความร่วมมือกับ มฟล. เมื่อ 15 ก.ย. ๒๕๖๙ · มุ่งเป็นศูนย์ฝึกอบรมและพันธมิตรต่อยอดของ AgiBot ในไทยและอาเซียน</span></div></div>
     </div>
   </div>
   <div class="bridge">ถัดไป → <b>แผน ๓ ปีของ Embodied Intelligence</b></div>
@@ -826,7 +842,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 9 · EMBODIED INTELLIGENCE — 3-YEAR PLAN ═══════════ -->
 <section class="s" data-cap="แผน ๓ ปี · Embodied Intelligence">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="on">เริ่มจากคน</span><i></i><span class="">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="on">เริ่มจากคน</span><i></i><span class="">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">แผน ๓ ปี — <span class="red">จากอาจารย์แกนนำ สู่หลักสูตรและงานวิจัยด้านการดูแล</span></h1>
     <div class="sub">ปีงบประมาณ ๒๕๗๐–๒๕๗๒ · ห้องปฏิบัติการเดียว แต่ละหลักสูตรรับผิดชอบคนละชั้นของหุ่นยนต์</div>
@@ -852,7 +868,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 10 · BUDGET ═══════════ -->
 <section class="s" data-cap="งบประมาณ · Budget">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="done">เริ่มจากคน</span><i></i><span class="on">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="done">เริ่มจากคน</span><i></i><span class="on">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">งบประมาณที่ขอ — <span class="red">฿<span data-count="10162800">10,162,800</span></span> ใน ๒ ปีงบประมาณ</h1>
     <div class="sub">สองโครงการที่ส่งต่อกัน: <b>คนและแพลตฟอร์ม</b> (Embodied Intelligence) + <b>เครื่องยนต์สร้างผลงาน</b> (ARIC ระยะที่ ๑)</div>
@@ -900,54 +916,16 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 
 <!-- ═══════════ 11 · FIVE-YEAR PATH ═══════════ -->
 <section class="s" data-cap="ภาพ ๕ ปี · Roadmap">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="done">เริ่มจากคน</span><i></i><span class="on">งบและข้อเสนอ</span></div>
+  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="done">เริ่มจากคน</span><i></i><span class="on">งบและเป้าหมาย</span></div>
   <div class="head">
     <h1 class="t">ภาพ ๕ ปี — <span class="red">คน ผลงาน และสมองเพื่อการดูแล</span> เติบโตไปด้วยกัน</h1>
     <div class="sub">คนจาก Embodied Intelligence เป็นที่ปรึกษาให้ทีม ARIC · ทีม ARIC เปลี่ยนโจทย์ของโรงพยาบาลเป็นผลิตภัณฑ์</div>
   </div>
   <div class="body" style="flex-direction:column">
-    <div class="road"><div></div><div class="hd a-fade" style="--d:0ms">ปีงบ ๒๕๗๐</div><div class="hd a-fade" style="--d:100ms">ปีงบ ๒๕๗๑</div><div class="hd a-fade" style="--d:200ms">ปีงบ ๒๕๗๒</div><div class="hd a-fade" style="--d:300ms">ปีงบ ๒๕๗๓–๗๔</div><div class="ln  a-fade" style="--d:300ms"><b>คน</b><span>Embodied Intelligence</span></div><div class="rc  a-rise" style="--d:400ms">อาจารย์แกนนำผ่านการอบรม · <b>Embodied AI Lab</b></div><div class="rc  a-rise" style="--d:620ms">รายวิชาเลือกใน CE / SE / DCE</div><div class="rc  a-rise" style="--d:840ms">อาจารย์เป็นวิทยากรภายนอก · แขนงวิชา Embodied AI</div><div class="rc  a-rise" style="--d:1060ms"><b>ศูนย์ฝึกอบรมหุ่นยนต์ระดับ GMS</b></div><div class="ln  a-fade" style="--d:450ms"><b>ผลงาน</b><span>ARIC</span></div><div class="rc  a-rise" style="--d:480ms">ตั้งศูนย์ · <b>9 ทีม</b></div><div class="rc  a-rise" style="--d:700ms">สะสม 18 ทีม · <b>10 MVP · 3 paid pilot</b></div><div class="rc  a-rise" style="--d:920ms">ระยะที่ ๒ — <b>spin-off ผ่านมูลนิธิ</b></div><div class="rc  a-rise" style="--d:1140ms">รวม <b>45 ทีม · 8 บริษัทใหม่</b></div><div class="ln care a-fade" style="--d:600ms"><b>สมองเพื่อการดูแล</b><span>Care brain</span></div><div class="rc care a-rise" style="--d:560ms"><b>ต้นแบบ 1–2 ชิ้น</b> ทดสอบร่วมกับโรงพยาบาล</div><div class="rc care a-rise" style="--d:780ms"><b>บริการนำร่อง</b>กับผู้ป่วยและผู้สูงอายุ</div><div class="rc care a-rise" style="--d:1000ms"><b>อนุสิทธิบัตร/สิทธิบัตร</b>ชิ้นแรก</div><div class="rc care a-rise" style="--d:1220ms"><b>ธุรกิจและรายได้</b>จากสมองเพื่อการดูแล</div></div>
+    <div class="road"><div></div><div class="hd a-fade" style="--d:0ms">ปีงบ ๒๕๗๐</div><div class="hd a-fade" style="--d:100ms">ปีงบ ๒๕๗๑</div><div class="hd a-fade" style="--d:200ms">ปีงบ ๒๕๗๒</div><div class="hd a-fade" style="--d:300ms">ปีงบ ๒๕๗๓–๗๔</div><div class="ln  a-fade" style="--d:300ms"><b>คน</b><span>Embodied Intelligence</span></div><div class="rc  a-rise" style="--d:400ms"><span>อาจารย์แกนนำผ่านการอบรม · <b>Embodied AI Lab</b></span></div><div class="rc  a-rise" style="--d:620ms"><span>รายวิชาเลือกใน CE / SE / DCE</span></div><div class="rc  a-rise" style="--d:840ms"><span>อาจารย์เป็นวิทยากรภายนอก · แขนงวิชา Embodied AI</span></div><div class="rc  a-rise" style="--d:1060ms"><span><b>ศูนย์ฝึกอบรมหุ่นยนต์ระดับ GMS</b></span></div><div class="ln  a-fade" style="--d:450ms"><b>ผลงาน</b><span>ARIC</span></div><div class="rc  a-rise" style="--d:480ms"><span>ตั้งศูนย์ · <b>9 ทีม</b></span></div><div class="rc  a-rise" style="--d:700ms"><span>สะสม 18 ทีม · <b>10 MVP · 3 paid pilot</b></span></div><div class="rc  a-rise" style="--d:920ms"><span>ระยะที่ ๒ — <b>spin-off ผ่านมูลนิธิ</b></span></div><div class="rc  a-rise" style="--d:1140ms"><span>รวม <b>45 ทีม · 8 บริษัทใหม่</b></span></div><div class="ln care a-fade" style="--d:600ms"><b>สมองเพื่อการดูแล</b><span>Care brain</span></div><div class="rc care a-rise" style="--d:560ms"><span><b>ต้นแบบ 1–2 ชิ้น</b> ทดสอบร่วมกับโรงพยาบาล</span></div><div class="rc care a-rise" style="--d:780ms"><span><b>บริการนำร่อง</b>กับผู้ป่วยและผู้สูงอายุ</span></div><div class="rc care a-rise" style="--d:1000ms"><span><b>อนุสิทธิบัตร/สิทธิบัตร</b>ชิ้นแรก</span></div><div class="rc care a-rise" style="--d:1220ms"><span><b>ธุรกิจและรายได้</b>จากสมองเพื่อการดูแล</span></div></div>
     <div class="note a-fade" style="--d:1600ms;margin-top:10px">เส้นทางสมองเพื่อการดูแลตามรายงานผลการหารือผู้ทรงคุณวุฒิ (ก.ค. ๒๕๖๙) · เป้าหมาย ARIC ๕ ปี ปีงบ ๒๕๗๐–๒๕๗๔</div>
   </div>
-  <div class="bridge">ถัดไป → <b>ข้อเสนอเพื่อพิจารณา</b></div>
   <div class="pg">11</div>
-</section>
-
-<!-- ═══════════ 12 · THE ASK ═══════════ -->
-<section class="s" data-cap="ข้อเสนอ · The Ask">
-  <div class="thread" aria-hidden="true"><span class="done">ทำไม</span><i></i><span class="done">สร้างอะไร</span><i></i><span class="done">สร้างอย่างไร</span><i></i><span class="done">เริ่มจากคน</span><i></i><span class="on">งบและข้อเสนอ</span></div>
-  <div class="head">
-    <h1 class="t">ข้อเสนอเพื่อพิจารณา — <span class="red">ขอความเห็นชอบในหลักการ</span></h1>
-    <div class="sub">เริ่มจากสิ่งที่เล็ก วัดผลได้ และส่งต่อกัน — ก่อนการลงทุนขนาดใหญ่</div>
-  </div>
-  <div class="body" style="gap:44px;align-items:center">
-    <div class="a-focus" style="flex:1.4;background:var(--red);color:var(--hi);padding:14px 28px;display:flex;flex-direction:column;justify-content:center;--d:200ms">
-      <div class="ask"><div class="n">1</div><div class="v">ทิศทาง: ARIC <b>สร้างสมองให้หุ่นยนต์</b> โดยมี<b>การรักษาและดูแล</b>เป็นจุดเน้นหลัก<span>สอดคล้องกับข้อเสนอแนะของผู้ทรงคุณวุฒิ ๔ ท่าน — เน้นชั้นการประยุกต์</span></div></div>
-      <div class="ask"><div class="n">2</div><div class="v">โครงการ <b>Embodied Intelligence</b> · <span class="num" style="display:inline;font-size:18px;color:#FFF6E6">฿3,972,300</span> ปีงบ ๒๕๗๐<span>หุ่นยนต์ ๒ แพลตฟอร์ม และการอบรมอาจารย์ ADT</span></div></div>
-      <div class="ask"><div class="n">3</div><div class="v">จัดตั้ง <b>ARIC ระยะที่ ๑</b> ใต้สำนักวิชา ADT · <span class="num" style="display:inline;font-size:18px;color:#FFF6E6">฿6,190,500</span> สองปี<span>อัตราใหม่ ๒ อัตรา · แต่งตั้งคณะกรรมการบริหารศูนย์ · เริ่มงานข้อบังคับมูลนิธิตั้งแต่ปีที่ 1</span></div></div>
-      <div class="ask"><div class="n">4</div><div class="v">ความร่วมมือกับ<b>สำนักวิชาด้านสุขภาพและโรงพยาบาลศูนย์การแพทย์ มฟล.</b><span>เป็นผู้ให้โจทย์ ที่ปรึกษา และสนามทดสอบสมองเพื่อการดูแล</span></div></div>
-    </div>
-    <div style="flex:1;display:flex;flex-direction:column;gap:18px;justify-content:center">
-      <div class="a-rise" style="--d:700ms">
-        <div style="font-size:17px;font-weight:600;margin-bottom:10px">เรื่องที่ยังต้องตัดสิน</div>
-        <div class="txt" style="display:flex;flex-direction:column;gap:9px">
-          <div><span class="chip">สำคัญที่สุด</span> ข้อบังคับมูลนิธิอนุญาตให้ถือหุ้นหรือไม่</div>
-          <div><span class="chip g">งบ</span> แหล่งงบของทั้งสองโครงการ</div>
-          <div><span class="chip g">กลไก</span> ผู้แต่งตั้งและวาระของคณะกรรมการบริหารศูนย์</div>
-          <div><span class="chip g">ความปลอดภัย</span> กรอบจริยธรรมการทดสอบหุ่นยนต์กับผู้ป่วย</div>
-        </div>
-      </div>
-      <div class="a-rise" style="--d:1000ms;border-top:1px solid var(--rule);padding-top:14px">
-        <div class="lbl">ผลที่จะเห็นภายใน ๒ ปี</div>
-        <div style="display:flex;gap:26px;margin-top:8px">
-          <div><div class="num red" style="font-size:30px" data-count="40">40</div><div class="note">อาจารย์พร้อมสอนหุ่นยนต์</div></div>
-          <div><div class="num red" style="font-size:30px" data-count="10">10</div><div class="note">MVP จากโจทย์จริง</div></div>
-          <div><div class="num red" style="font-size:30px">1–2</div><div class="note">ต้นแบบสมองเพื่อการดูแล</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pg">12</div>
 </section>
 
 <!-- ═══════════ 13 · Q&A ═══════════ -->
@@ -995,7 +973,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
     </figcaption>
   </figure>
   </div>
-  <div class="pg">13</div>
+  <div class="pg">12</div>
 </section>
 
 </div></div>
@@ -1004,7 +982,7 @@ h1.t{font-size:38px;font-weight:600;margin:0;letter-spacing:-.01em;line-height:1
 <div id="bar">
   <button id="prev" aria-label="สไลด์ก่อนหน้า">‹</button>
   <div id="dots"></div>
-  <span id="cnt">01 / 13</span>
+  <span id="cnt">01 / 12</span>
   <button id="next" aria-label="สไลด์ถัดไป">›</button>
   <button id="ov" aria-label="ดูภาพรวม" title="ภาพรวมทั้งหมด (G)">▦</button>
   <span id="ver"></span>
